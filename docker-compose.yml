@@ -1,0 +1,11 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+      args:
+        LOCAL_ENV: true
+#    volumes:
+#      - ./target/Lab06.war:/usr/local/tomcat/webapps/Lab06.war
+    ports:
+      - "8080:8080"
